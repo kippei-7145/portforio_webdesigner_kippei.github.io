@@ -1,0 +1,423 @@
+@charset "utf-8";
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+.container {
+  max-width: 1000px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+/* ヘッダー */
+header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+header > .container{
+  height: 100px;
+  display: flex;
+  align-items: center;
+  max-width: none;
+  padding: 0 30px;
+}
+/* ロゴ */
+.area-logo-header .logo {
+  display: block;
+}
+.area-logo-header img {
+  height: 50px;
+  vertical-align: bottom;
+}
+/* ヘッダーナビ */
+.nav-header {
+  margin: 0 0 0 auto;
+}
+.list-nav-header {
+  display: flex;
+  align-items: center;
+  margin: 0 -15px;
+}
+.list-nav-header > li {
+  padding: 0 15px;
+}
+.list-nav-header a {
+  color: #fff;
+  font: 400 18px/1em 'futura PT','note sans japanese',sans-serif;
+}
+
+/* トップビュー */
+.area-top-view { 
+  background:url(../cmn/img/headerphoto.jpg) no-repeat bottom center;
+  background-size: cover;
+  width: 100%;
+}
+.area-top-view > .container{
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.area-top-view img {
+height: 100px;
+vertical-align: bottom;
+}
+
+.area-top-view .main_ttl {
+  color: #fff;
+  font: 400 2rem/1em 'Unna', serif;
+  letter-spacing: .04em;
+  margin: 10px 0 0;
+  text-align: center;
+}
+.area-top-view .sub_ttl {
+  color: #fff;
+  font: 200 1.25rem/1em 'Unna', serif;
+  letter-spacing: .04em;
+  margin: 15px 0 0;
+  text-align: center;
+}
+.area-top-view .ttl {
+  color: #fff;
+  font: 200 0.875rem/1em 'Unna', serif;
+  letter-spacing: .04em;
+  margin: 10px 0 0;
+  text-align: center;
+}
+/* トップビューend */
+/* エリアホーム start*/
+[class*="area-home"] {
+  padding: 40px 0 ;
+}
+
+/* ヘッド */
+.head-home {
+  margin:  0 0 10%;
+  display: flex;
+  justify-content: center;
+}
+.head-home .ttl,
+.head-home .ttl_works {
+  font: 400 56px/1em 'Unna', serif;
+  font-style: normal;
+  padding: 0 0 12px;
+  position: relative;
+  text-align: center;
+}
+.head-home .ttl:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #000;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+}
+.head-home .ttl_works:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #fff;
+  position: absolute;
+  bottom: 5%;
+  left: 0;
+}
+
+/* 2分割レイアウト */
+.layout-2-div,
+.layout-works-div {
+  display: block;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  
+}
+.layout-2-div > .img,
+.layout-works-div > .img {
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+.layout-2-div > .img img,
+.layout-works-div > .img img{
+  width: 100%;
+  vertical-align: bottom;
+  margin-bottom: 20%;
+}
+.layout-2-div > .meishi_img img{
+  width: 100%;
+  vertical-align: bottom;
+  margin-bottom: 0;
+}
+/* works */
+.area-home-work {
+  background-color: #6C7779;
+  color: #fff;
+}
+.works_category {
+  font: 400 1rem/1em 'Unna', serif;
+  margin: 5% 0 ;
+  text-align: left;
+  border-left: 1px solid #fff;
+  padding: 5px 0 5px 10px;
+}
+/* worksボタン */
+.more_btn {
+  color: #fff;
+  display: block;
+  font: 500 1rem/1em 'Unna', serif;
+  text-align: center;
+}
+.more_btn a {
+  color: #fff;
+}
+.layout-works-div > .img {
+  position: relative;
+}
+.layout-works-div > .img img {
+  width: 30%;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: -10px;
+  left: 35%;
+}
+
+
+/* テキストホーム */
+.text-home .ttl{
+  font: 500 32px/1em 'Unna', serif;
+  margin: 0 0 20px;
+  text-align: center;
+}
+.text-home .discription{
+  font: 300 2rem/1.8em 'Unna', serif;
+  text-align: left;
+}
+
+
+/* バックグラウンドとは */
+.bg-black {
+  color: #fff;
+  background: black;
+}
+
+/* kippeiとは */
+.area-home-about img{
+  transform: scale(1.1);
+  transform-origin: center center;
+}
+
+section + section {
+  margin: 10px 0;
+}
+/* フッター */
+footer > .container {
+  padding: 10% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* snsリンク箇所 */
+.list-sns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 -10px 10px;
+}
+.list-sns > li {
+  padding: 0 10px;
+}
+.list-sns a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+}
+.list-sns a:before{
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  }
+
+.list-sns .facebook a::before{
+  background: url(../cmn/icon/facebookicon.svg);
+}
+.list-sns .instagram a::before{
+  background: url(../cmn/icon/instagramicon.svg);
+}
+.list-sns .twitter a::before{
+  background: url(../cmn/icon/twittericon.svg);
+}
+
+.container .copyrigh {
+  font: 300 14px/1em 'Unna', serif;
+  margin: 50px 0 0;
+  
+}
+.menu_btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: #000;
+}
+.menu_btn span,
+.menu_btn span::before,
+.menu_btn span::after {
+  content: '';
+  display: block;
+  height: 3px;
+  width: 25px;
+  border-radius: 3px;
+  background-color:#ffffff ;
+  position: absolute;
+}
+.menu_btn span:before {
+  bottom: 8px;
+}
+.menu_btn span:after {
+  top: 8px;
+}
+#menu_btn_check:checked ~ .menu_btn span {
+  background-color: rgb(255, 255, 255,);
+}
+#menu_btn_check:checked ~ .menu_btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+#menu_btn_check:checked ~ .menu_btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+/* チェックボックスの取り消し */
+#menu_btn_check {
+  display: none;
+}
+/* メニューリンク */
+.menu_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  background-color: #000;
+}
+.menu_content ul {
+  padding: 70px 10px 0;
+}
+.menu_content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu_content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+.menu_content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+/* ボタンを押したら上が出てくる記述 */
+.menu_content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  z-index: 80;
+  background-color: #b99566;
+  transition: all 0.5s;
+}
+#menu_btn_check:checked ~ .menu_content {
+  left: 0;
+}
+/* メイン */
+.main_header_pc {
+background: url(../images/main_bg_pc.jpeg) no-repeat center;
+background-size: cover;
+height: 550px;
+width: 100%;
+}
+@media (min-width: 768px) {
+  .text-home .ttl {
+    text-align: left;
+    padding: 0 10%;
+  }
+  .text-home .description {
+    padding: 0 10%;
+  }
+  .flex_layout { 
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  .flex_layout > div{ 
+    width: calc(50% - 30px);
+    margin-bottom: 20px;
+  }
+  .works_category {
+    font-size: 1.5rem;
+  }
+  .more_btn {
+    font: 500 1.25rem/1em 'Unna', serif;
+    display: block;
+  }
+  .more_btn a{
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+  .media_btn {
+    display: block;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
