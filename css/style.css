@@ -25,6 +25,9 @@ header > .container{
   max-width: none;
   padding: 0 30px;
 }
+header nav {
+  display: none;
+}
 /* ロゴ */
 .area-logo-header .logo {
   display: block;
@@ -149,7 +152,7 @@ vertical-align: bottom;
 .layout-works-div > .img img{
   width: 100%;
   vertical-align: bottom;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 .layout-2-div > .meishi_img img{
   width: 100%;
@@ -219,7 +222,7 @@ section + section {
 }
 /* フッター */
 footer > .container {
-  padding: 10% 0;
+  padding: 5% 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -246,8 +249,8 @@ footer > .container {
 .list-sns a:before{
   content: "";
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
@@ -269,7 +272,7 @@ footer > .container {
 
 .container .copyrigh {
   font: 300 14px/1em 'Unna', serif;
-  margin: 50px 0 0;
+  margin: 20px 0 0 30px;
   
 }
 .menu_btn {
@@ -362,7 +365,7 @@ footer > .container {
   top: 0;
   left: 100%;
   z-index: 80;
-  background-color: #b99566;
+  background-color: #6C7779;
   transition: all 0.5s;
 }
 #menu_btn_check:checked ~ .menu_content {
@@ -376,6 +379,39 @@ height: 550px;
 width: 100%;
 }
 @media (min-width: 768px) {
+  .humburger_menu {
+    display: none;
+  }
+  /* PCヘッダー表示 */
+  header nav {
+    display: block;
+    position: absolute;
+    top: 22px;
+    right: 0;
+  }
+  header nav ul {
+    /* padding-right: 50px; */
+    margin: 0 auto;
+  }
+  header nav ul li{
+    display: inline-block;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 1px;
+    font-size: 1rem;
+  }
+  header nav ul li:hover{
+    background: #fff;
+  }
+  header nav ul li a:hover{
+    color: #000;
+  }
+  header nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 0 30px;
+  }
   .text-home .ttl {
     text-align: left;
     padding: 0 10%;
@@ -389,7 +425,7 @@ width: 100%;
       justify-content: space-between;
   }
   .flex_layout > div{ 
-    width: calc(50% - 30px);
+    width: 50%;
     margin-bottom: 20px;
   }
   .works_category {
@@ -409,6 +445,18 @@ width: 100%;
     align-items: center;
     justify-content: center;
   }
+  /* viewmoreの線 */
+  .layout-works-div > .img {
+    position: relative;
+  }
+  .layout-works-div > .img img {
+    width: 15%;
+    margin-bottom: 0;
+    position: absolute;
+    bottom: -20px;
+    left: 42%;
+  }
+  
 }
 
 
